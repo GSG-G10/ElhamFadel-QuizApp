@@ -1,13 +1,3 @@
-.desc-header{
-    display: flex;
-    align-items: center;
-    padding: 2rem 3rem;
-}
-.logo {
-    width: 5%;
-    transform: 0;
-    margin-bottom: 0;
-}
 .para
 {
     padding: 2rem 5rem;
