@@ -1,24 +1,17 @@
 
-console.log(qusetions[0].qusetion)
-const remainNumber = document.getElementById("remainNumber");
-const nextBtn = document.querySelector(".nextBtn");
-const titleQusetion = document.querySelector("div.question-game__header");
-const answerQuestion_1 = document.querySelector("#answer-1");
-const answerQuestion_2 = document.querySelector("#answer-2");
-const answerQuestion_3 = document.querySelector("#answer-3");
-const answerQuestion_4 = document.querySelector("#answer-4");
 let answerRight ="";
 let numberRightAnswer = 0;
+const totalNumberQuestion = 10;
+let remainingNumber = 10; 
 // load page when page load we will get first question
 window.addEventListener('load', (event) => {
+    sectionResult.classList.add('hidden');
     addQuestionElement();
   });
 //senario when user click button Next 
 // firstly The number of questions will be reduced one
 // then execute math random  
 // The remaining number of questions
-const totalNumberQuestion = 10;
-let remainingNumber = 10; 
 //choose a random question function
 function getrandomQuestionNumber (){
   return Math.floor(Math.random() * 10)
@@ -56,5 +49,24 @@ nextBtn.addEventListener("click", function(event){
     //then go to another question 
     remainingNumber = remainingNumber - 1;
     remainNumber.textContent = remainingNumber+"/10";
+    if(remainingNumber===1){
+        // the next will be finish
+        nextBtn.textContent = "FINISH";
+        nextBtn.style.backgroundColor = "red";
+        return "";
+    }else if(remainingNumber===0){
+    // resutl
+    numberRightAnswer = numberRightAnswer *10;
+      // if finish all exam 
+      nextBtn.classList.add('hidden');
+      remainNumber.classList.add('hidden');
+      questionGame.classList.add('hidden');
+      sectionResult.classList.remove("hidden")
+      // edit header 
+      headingPage.textContent = "Result Quiz";
+      console.log(numberRightAnswer);
+      result.textContent = numberRightAnswer + "%"
+      return "";
+    }
     return addQuestionElement();
   }); 
