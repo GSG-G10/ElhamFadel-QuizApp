@@ -64,7 +64,13 @@ nextBtn.addEventListener("click", function(event){
       sectionResult.classList.remove("hidden")
       // edit header 
       headingPage.textContent = "Result Quiz";
-      console.log(numberRightAnswer);
+      localStorage.getItem("lastname")
+      yourName.textContent = localStorage.getItem("name");
+      if(localStorage.getItem("gender")==="male"){
+        avater.src = "../svg/boy.svg";
+      }else{
+        avater.src = "../svg/femal.svg";
+      }
       result.textContent = numberRightAnswer + "%"
       return "";
     }

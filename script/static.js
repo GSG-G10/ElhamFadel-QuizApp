@@ -10,6 +10,8 @@ const sectionResult =  document.querySelector(".section-result")
 const headerPrimary = document.querySelector(".header-primary")
 const headingPage = document.querySelector(".header-primary")
 const result = document.querySelector(".result")
+const yourName = document.querySelector(".yourName")
+const avater = document.querySelector("#avater")
 
 
 // let userDataStorage = {};
