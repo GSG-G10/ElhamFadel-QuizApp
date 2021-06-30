@@ -55,13 +55,14 @@ body {
 .header-primary{
     color: #cacaca;
 }
-.global-header{
+.global-header {
     display: flex;
     align-items: center;
-    padding: 2rem 3rem;
+    justify-content: space-between;
+    padding: 2rem 2rem;
 }
 .logo {
-    width: 5%;
+    width: 7%;
     transform: 0;
     margin-bottom: 0;
 }

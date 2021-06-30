@@ -8,7 +8,8 @@ submitBtn.addEventListener("click", function(event){
     event.preventDefault();
     const gender = getRedioValue();
     //there's problem 
-    handleUserData(useName.value,gender) && location.replace("/pages/game.html");
+    handleUserData(useName.value,gender)&&  location.replace("/pages/game.html")
+    // && setTimeout(function(){ location.replace("/pages/game.html"); }, 1000);
     //handleUserData will return true value after save data 
   }); 
   //get redio value 

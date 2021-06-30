@@ -10,10 +10,16 @@
 </head>
 <body>
     <header class="global-header">
-        <a class="logo" href="./../index.html">
-            <img  src="./../svg/thinking.svg">
-        </a>
-        <h1 class="header-primary">Questions Quiz</h1>
+        <div class="logo-box">
+            <a class="logo" href="./../index.html">
+                <img  src="./../svg/thinking.svg">
+            </a>
+            <h1 class="header-primary">Questions Quiz</h1>
+        </div>
+        <div class="right-side">
+        <span id="mark">5/10</span>
+        <button class="btn btn-primary nextBtn">Next</button>
+       </div>
     </header>
     <main>
         <!-- prevent form to make submit -->
@@ -21,9 +27,35 @@
      <!-- ========================  Section-1 ============================== -->
   
       <!-- ======================== end Section-1 ============================== -->
+      <!-- ========================  Section-2 ============================== -->
+    <div class="question-game">
+     <div class="question-game__header">
+      ​function sayHi() { <br>
+        console.log(name); console.log(age); <br>
+        var name = 'Lydia'; <br>
+        let age = 21; <br>
+        sayHi();
+     </div>
+     <div class="question-game__answers">
+        <label name="gender" value="famel" class="gender" >
+            <input type="radio"  name="gender" value="famel" id="gender2" > Lydia and undefined
+           </label>
+           <label name="gender" value="famel" class="gender" >
+            <input type="radio"  name="gender" value="famel" id="gender2" > Lydia and undefined
+           </label>
+           <label name="gender" value="famel" class="gender" >
+            <input type="radio"  name="gender" value="famel" id="gender2" > Lydia and undefined
+           </label>
+           <label name="gender" value="famel" class="gender" >
+            <input type="radio"  name="gender" value="famel" id="gender2" > Lydia and undefined
+           </label>
+       </div>
+    </div>
+      <!-- ======================== end Section-2 ============================== -->
     </div>
     </main>
     <script src="./../script/questions.js"></script>
+    <script src="./../script/static.js"></script>
     <script src="./../script/game.js"></script>
    
 </body>

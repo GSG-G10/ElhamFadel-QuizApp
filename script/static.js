@@ -1,5 +1,7 @@
 let userDataStorage = {};
 function handleUserData(name="user",gender="male"){
- console.log("Helo")
+    userDataStorage.name=name;
+    userDataStorage.gender = gender;
+    console.log(userDataStorage)
  return true
 }
