@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/game.css">
+    <title>Quize</title>
+</head>
+<body>
+    <header class="global-header">
+        <a class="logo" href="./../index.html">
+            <img  src="./../svg/thinking.svg">
+        </a>
+        <h1 class="header-primary">Log Quiz</h1>
+    </header>
+    <main>
+        <!-- prevent form to make submit -->
+    <div class="block-box-form">
+     <!-- ========================  Section-1 ============================== -->
+        <form class="user-data">
+            <div class="box-gender">
+            <label class="label-gender">Choose your Avater</label>
+           <div class="gender">
+          <label name="gender" value="male" class="gender" >
+           <input type="radio"  name="gender" value="male" class="gender" id="gender1">
+           <img src="../svg/boy.svg" />
+          </label>
+          <label name="gender" value="famel" class="gender" >
+           <input type="radio"  name="gender" value="famel" id="gender2" >
+           <img src="../svg/femal.svg" />
+          </label>
+          </div>
+      </div>
+            <input type="text" name="name" placeholder="Enter your name" id="user-name" value=""/>
+            <input type="submit" name="submit" id="submit" class ="btn btn-primary" value="submit" />
+        </form>
+      <!-- ======================== end Section-1 ============================== -->
+    </div>
+    </main>
+    <script src="./../script/static.js"></script>
+    <script src="./../script/log.js"></script>
+</body>
+</html>
