@@ -71,7 +71,7 @@ form.user-data {
     place-content: space-between;
     /* align-content: space-between; */
 }
-label.gender {
+label.answer {
     width: 45%;
     color: #fff;
     display: flex;
@@ -91,7 +91,7 @@ label.gender {
     align-items: unset;
     /* padding: 2rem 3rem; */
 }
-#mark
+#remainNumber
 {
     font-size: 2.2rem;
     color: #fff;
