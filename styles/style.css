@@ -58,10 +58,9 @@ body {
 .global-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 2rem 2rem;
 }
-.logo {
+.global-header .logo {
     width: 7%;
     transform: 0;
     margin-bottom: 0;

@@ -103,6 +103,14 @@ label.answer {
     font-size: 1rem;
     font-weight: 600;
 }
+.result
+{
+    color: #fff;
+    text-align: -webkit-center;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 2rem;
+}
 .hidden
 {
     display: none;
