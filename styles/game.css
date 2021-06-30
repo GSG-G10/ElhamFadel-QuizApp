@@ -41,4 +41,8 @@ form.user-data {
 {
     cursor: pointer;
 }
+.hidden
+{
+    display: none;
+}
 
